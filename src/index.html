@@ -3,12 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>Widget weather</title>
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <div class="wrapp">
+      <div class="form">
+        <label class="form__label" for="city">Еnter city name</label>
+        <input class="form__input" type="text" name="city" placeholder="Name city" />
+        <button class="form__button" type="button" disabled>Push me</button>
+      </div>
+      <div class="weather"></div>
+      <div class="weather__loading">
+        <img src="./images/loading-weather.gif" alt="Loading..." />
+      </div>
+    </div>
+
+    <script src="./index.js" type="module"></script>
   </body>
 </html>
