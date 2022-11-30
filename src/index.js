@@ -1,3 +1,4 @@
+import './sass/index.scss';
 import toastr from 'toastr';
 import 'toastr/build/toastr.min.css';
 
