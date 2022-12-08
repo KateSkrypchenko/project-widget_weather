@@ -12,7 +12,7 @@ const refs = {
 refs.inputWeather.addEventListener('input', inputNameCountry);
 
 function inputNameCountry(event) {
-  if (event.target.value === '') {
+  if (!event.target.value) {
     return;
   } else {
     refs.buttonWeather.disabled = false;
