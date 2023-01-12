@@ -1,0 +1,144 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  color: #487996;
+  background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapp {
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px;
+}
+@media screen and (min-width: 480px) {
+  .wrapp {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .wrapp {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .wrapp {
+    max-width: 1200px;
+  }
+}
+
+.weather__loading {
+  display: none;
+}
+
+.form {
+  margin-bottom: 25px;
+}
+
+.form__label {
+  text-align: center;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.form__input {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  margin-bottom: 20px;
+  display: block;
+  border: 1px solid #487996;
+  border-radius: 4px;
+  background-color: #b1d1de;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+}
+.form__input::-moz-placeholder {
+  color: #487996;
+}
+.form__input:-ms-input-placeholder {
+  color: #487996;
+}
+.form__input::placeholder {
+  color: #487996;
+}
+.form__input:hover, .form__input:focus {
+  border: 1px solid #2196f3;
+  outline: rgba(0, 0, 0, 0);
+}
+
+.form__button {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  display: block;
+  background-color: #ffffff;
+  color: #487996;
+  border: 1px solid #487996;
+  cursor: pointer;
+  border-radius: 4px;
+  transition-property: border;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+}
+.form__button:disabled {
+  color: gray;
+}
+.form__button:disabled:hover, .form__button:disabled:focus {
+  border: 1px solid #487996;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+}
+.form__button:hover, .form__button:focus {
+  border: 1px solid #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.weather {
+  margin: 0 auto;
+  width: 60%;
+  background-color: #487996;
+  color: #ffffff;
+  border-radius: 15px;
+}
+
+.weather span {
+  font-weight: bold;
+}
+
+.weather p {
+  text-align: center;
+}
+
+.weather__icon {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}/*# sourceMappingURL=index.css.map */
